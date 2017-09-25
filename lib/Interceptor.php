@@ -1,6 +1,6 @@
 <?php
 
-namespace cidaas\cidaas-interceptor\lib;
+namespace cidaas\interceptor\lib;
 
 use Closure;
 use GuzzleHttp\Client;
