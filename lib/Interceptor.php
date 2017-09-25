@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Middleware;
+namespace Cidaas\Middleware;
 
 use Closure;
 use GuzzleHttp\Client;
