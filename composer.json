@@ -1,0 +1,13 @@
+{
+    "name": "vimalprakash/cidaas-interceptor-php",
+    "description": "Interceptor for Cidaas",
+    "authors": [
+        {
+            "name": "vimal prakash",
+            "email": "vimal.prakash@widas.in"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    }
+}
