@@ -49,9 +49,10 @@ class Interceptor
             }
         }
 
+        //dd($request->cookies->get("cidaas_access_token"));
         $cookieRequest = false;
-        if($access_token==null && $request->cookies->get("access_token")){
-            $access_token = $request->cookies->get("access_token");
+        if($access_token==null && $request->cookies->get("cidaas_access_token")){
+            $access_token = $request->cookies->get("cidaas_access_token");
             $cookieRequest = true;
         }
 
@@ -156,10 +157,10 @@ class Interceptor
 
         }else{
             if($cookieRequest){
-                return response()->json(["error"=>"Access denied for this resource"], 401)->headers->setcookie("access_token",null);
+                return response()->json(["error"=>"Access denied for this resource"], 401)->withCookie(cookie("cidaas_access_token",null));
             }
         }
-        ;
+
         return response()->json(["error"=>"Access denied for this resource"], 401);
 
     }
