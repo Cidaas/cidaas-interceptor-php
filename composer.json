@@ -1,11 +1,12 @@
 {
     "name": "cidaas/cidaas-interceptor",
     "description": "Interceptor for Cidaas",
-    "authors": [
-        {
-            "name": "vimal prakash",
-            "email": "vimal.prakash@widas.in"
-        }
+  "authors": [
+    {
+      "name": "cidaas by Widas ID GmbH",
+      "email": "developer@widas.de",
+      "homepage": "https://www.cidaas.com"
+    }
     ],
     "require": {
         "guzzlehttp/guzzle": "^6.3"
